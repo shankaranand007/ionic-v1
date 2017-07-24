@@ -1,0 +1,28 @@
+<ion-view view-title="INFOGENX">
+  <ion-content class="padding">
+    <h2 class="titile"><b>Welcome to infogenx</b></h2>
+    <center><p>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      
+    </head>
+    <body class="body">
+    
+    </body>
+    </html>
+    <H1><B>THIS IS INFOGENX</B></H1>
+    <div class="img">
+        <img src="img/logo.png">
+    </div>
+
+    </p></center>
+    <ion-list >
+      <ion-item ng-repeat="chat in myChats">
+        <h2>{{chat.UserName}}</h2>
+        <p>{{chat.date}}</p>
+        <p>{{chat.message}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

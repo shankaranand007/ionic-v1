@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	
+</head>
+<ion-view view-title="Active Developer">
+<body>
+<ion-content>
+<br>
+            <header>
+            <div class="bar bar-header bar-royal">
+  <h1 class="title">Admin-Signin</h1>
+</div>
+            </header>
+            <br>
+            <center><div class="img">
+              <img src="img/logo.png">
+            </div>
+            </center>
+
+{{$scope.responseData }}
+            <br>
+          <div class="list">
+            <label class="item item-input">
+              
+              <input class="email" type="text" ng-model="userData.username" placeholder="Email">
+            </label>
+            <label class="item item-input">
+              
+              <input class="pass" type="password" ng-model="userData.password" placeholder="Password">
+            </label>
+          </div>
+          <div class="padding">
+            <button class="button button-block button-positive" ng-click="login(userData)">
+              Sign-Up
+            </button>
+            <p class="text-center">
+              <a href="#/forgot-password">Forgot password</a>
+            </p>
+          </div>
+
+
+          
+          <div class="list">
+            <label class="item item-input">
+              
+              <input class="email" type="text" ng-model="signinData.username" placeholder="Email">
+            </label>
+            <label class="item item-input">
+              
+              <input class="pass" type="password" ng-model="signinData.password" placeholder="Password">
+            </label>
+            <button class="button button-assertive button-full" ng-click="signin(signinData)">Login</button>
+          </div> 
+
+
+        </ion-content>
+      </ion-view>
+    
+  </body>
+</html>
